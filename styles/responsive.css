@@ -1,0 +1,376 @@
+/* 响应式设计 - 平板设备 */
+@media (max-width: 1024px) {
+    /* 导航栏 */
+    .navbar-nav .nav-list {
+        gap: 20px;
+    }
+    
+    .search-input {
+        width: 180px;
+    }
+    
+    .search-input:focus {
+        width: 220px;
+    }
+    
+    /* 横屏壁纸区 */
+    .cinema-container {
+        padding: 0 40px;
+    }
+    
+    .nav-btn {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .prev-btn {
+        left: 0;
+    }
+    
+    .next-btn {
+        right: 0;
+    }
+    
+    /* 瀑布流 */
+    .masonry-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+/* 响应式设计 - 平板/手机设备 */
+@media (max-width: 768px) {
+    /* 导航栏 */
+    .navbar .container {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 10px 20px;
+    }
+    
+    .navbar-brand .logo {
+        font-size: 20px;
+    }
+    
+    .navbar-nav {
+        order: 3;
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-list {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .nav-item .nav-link {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    
+    .navbar-actions {
+        gap: 10px;
+    }
+    
+    .search-input {
+        width: 150px;
+        padding: 6px 35px 6px 12px;
+        font-size: 13px;
+    }
+    
+    .search-input:focus {
+        width: 180px;
+    }
+    
+    .import-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    
+    /* 主内容区 */
+    .main-content {
+        margin-top: 120px;
+    }
+    
+    /* 横屏壁纸区 */
+    .landscape-section {
+        padding: 40px 0;
+    }
+    
+    .cinema-container {
+        padding: 0 30px;
+    }
+    
+    .projector-screen {
+        aspect-ratio: 16 / 9;
+    }
+    
+    .nav-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .nav-btn svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .controls {
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .control-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .progress-bar {
+        max-width: 300px;
+    }
+    
+    /* 瀑布流 */
+    .masonry-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    
+    /* Lightbox */
+    .lightbox-content {
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+    
+    .lightbox-nav {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .lightbox-nav svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .lightbox-close {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .lightbox-close svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* 响应式设计 - 手机设备 */
+@media (max-width: 480px) {
+    /* 导航栏 */
+    .navbar .container {
+        gap: 10px;
+        padding: 8px 15px;
+    }
+    
+    .navbar-brand .logo {
+        font-size: 18px;
+    }
+    
+    .navbar-nav .nav-list {
+        gap: 10px;
+    }
+    
+    .nav-item .nav-link {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    
+    .navbar-actions {
+        gap: 8px;
+    }
+    
+    .search-box {
+        display: none;
+    }
+    
+    .import-btn {
+        padding: 7px 14px;
+        font-size: 12px;
+        gap: 6px;
+    }
+    
+    .import-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    /* 主内容区 */
+    .main-content {
+        margin-top: 110px;
+    }
+    
+    /* 横屏壁纸区 */
+    .landscape-section {
+        padding: 30px 0;
+    }
+    
+    .cinema-container {
+        padding: 0 20px;
+    }
+    
+    .projector-screen {
+        aspect-ratio: 16 / 10;
+    }
+    
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .controls {
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .control-btn {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .progress-bar {
+        max-width: 200px;
+    }
+    
+    .slide-counter {
+        font-size: 12px;
+        min-width: 50px;
+    }
+    
+    /* 竖屏壁纸区 */
+    .portrait-section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    /* 瀑布流 - 单列布局 */
+    .masonry-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .masonry-item {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* Lightbox */
+    .lightbox-image-container {
+        padding: 10px;
+    }
+    
+    .lightbox-nav {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .lightbox-nav svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .lightbox-close {
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .lightbox-close svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* 响应式设计 - 小屏手机 */
+@media (max-width: 360px) {
+    /* 导航栏 */
+    .navbar-nav .nav-list {
+        gap: 8px;
+    }
+    
+    .nav-item .nav-link {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    /* 横屏壁纸区 */
+    .cinema-container {
+        padding: 0 15px;
+    }
+    
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .nav-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .controls {
+        flex-wrap: wrap;
+    }
+    
+    .progress-bar {
+        order: 3;
+        width: 100%;
+        max-width: none;
+    }
+    
+    /* 瀑布流 */
+    .masonry-grid {
+        gap: 12px;
+        padding: 8px;
+    }
+}
+
+/* 横屏手机适配 */
+@media (max-height: 500px) and (orientation: landscape) {
+    /* 主内容区 */
+    .main-content {
+        margin-top: 80px;
+    }
+    
+    /* 横屏壁纸区 */
+    .landscape-section {
+        padding: 20px 0;
+        min-height: auto;
+    }
+    
+    .projector-screen {
+        aspect-ratio: 21 / 9;
+    }
+    
+    /* 竖屏壁纸区 */
+    .portrait-section {
+        padding: 30px 0;
+    }
+    
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    /* 瀑布流 */
+    .masonry-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+}
